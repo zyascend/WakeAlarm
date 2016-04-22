@@ -1,0 +1,23 @@
+
+
+<resources>
+    <color name="toolbar_title">#ffffff</color>
+    <color name="primary">#4caf50</color>
+    <color name="primary_dark">#4caf50</color>
+    <color name="accent">#eeeeee</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+    <color name="background_alarm_white">#ffffff</color>
+    <color name="background_tiny_grey">#e9e9e9</color>
+    <color name="accent_alarm">#ffffff</color>
+    <color name="primary_green">#4caf50</color>
+    <color name="primary_text_material_dark">#3c3f41</color>
+    <color name="primary_text_grey">#3c3f41</color>
+    <color name="primary_grey_700">#616161</color>
+    <color name="editText_hint">#4Dffffff</color>
+    <color name="button_orange">#F57F17</color>
+    <color name="secondary_text_material_dark">#3c3f41</color>
+    <color name="colorBackground">#3c3f41</color>
+    <color name="window_background">#3c3f41</color>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_line"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageView_q1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView_q2" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_line"
+        android:id="@+id/imageView_q2"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/time_hour_text_q"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:fontFamily="sans-serif-thin"
+
+        android:id="@+id/time_hour_text_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="70sp"
+        android:textColor="@color/background_alarm_white"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView_q1"
+        android:layout_toStartOf="@+id/textView_q" />
+    <TextView
+        android:fontFamily="sans-serif-thin"
+
+        android:id="@+id/time_minute_text_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="70sp"
+        android:textColor="@color/background_alarm_white"
+        android:layout_alignTop="@+id/textView_q"
+        android:layout_toEndOf="@+id/textView_q" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="70sp"
+        android:textColor="@color/background_alarm_white"
+        android:layout_alignTop="@+id/time_hour_text_q"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_q" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/alarm_complete"
+        android:textColor="@color/background_alarm_white"
+        android:layout_below="@+id/imageView_q2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView_quesAlarm_tittle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 + 1 = ?"
+        android:textSize="20sp"
+        android:id="@+id/question_text"
+        android:textColor="@color/primary_text_grey"
+        android:layout_below="@+id/textView_quesAlarm_tittle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="@string/answer_hint"
+        android:background="@drawable/bg_ed"
+        android:layout_below="@+id/question_text"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:lines="4"
+        android:minLines="4"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/primary_text_grey"
+        android:scrollHorizontally="false"
+        android:textColorHint="@color/editText_hint"
+        android:inputType="textCapWords|textMultiLine"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_height="80dp"
+        android:id="@+id/answer_ed"
+        />
+    <Button
+        android:id="@+id/fra_sure_btn"
+        android:text="@string/input_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+
+</RelativeLayout>

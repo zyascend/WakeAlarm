@@ -1,0 +1,14 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/discard_alarm"
+          android:icon="@drawable/ic_delete_white_24dp"
+          android:title="@string/action_discard_alarm"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/save_Alarm"
+          android:icon="@drawable/ic_check_white_24dp"
+          android:title="@string/action_save_alarm"
+          app:showAsAction="ifRoom" />
+</menu>

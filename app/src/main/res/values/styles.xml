@@ -1,0 +1,32 @@
+
+
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionModeBackground">@color/primary</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AlarmTheme" parent="AppTheme" >
+        <item name="android:listDivider">@drawable/divider_02</item>
+        <item name="android:popupMenuStyle">@style/Theme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Theme.PopupMenu</item>>
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="android:colorBackground">@color/background_tiny_grey</item>
+        <item name="colorAccent">@color/accent_alarm</item>
+        <item name="android:windowBackground">@color/background_alarm_white</item>
+    </style>
+
+    <style name="Theme.PopupMenu"
+        parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/primary</item>
+    </style>
+
+</resources>

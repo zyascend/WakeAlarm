@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/alarm_line"
+       android:layout_marginTop="60dp"
+       android:id="@+id/imageView2"
+       android:layout_alignParentTop="true"
+       android:layout_alignStart="@+id/imageView" />
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/alarm_line"
+       android:id="@+id/imageView"
+       android:layout_marginTop="25dp"
+       android:layout_below="@+id/time_hour_text"
+       android:layout_centerHorizontal="true" />
+   <TextView
+       android:id="@+id/time_hour_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="sans-serif-thin"
+       android:text="15"
+       android:textSize="70sp"
+       android:textColor="@color/background_alarm_white"
+       android:layout_marginTop="25dp"
+       android:layout_below="@+id/imageView2"
+       android:layout_toStartOf="@+id/textView" />
+    <TextView
+        android:id="@+id/time_minute_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="70sp"
+        android:textColor="@color/background_alarm_white"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="70sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/background_alarm_white"
+        android:layout_alignTop="@+id/time_hour_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="闹钟时间到"
+        android:textColor="@color/background_alarm_white"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btn_stopAlarm_normal"
+        android:text="   长按关闭闹钟   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:textSize="15sp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_snooze_white_36dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageButton" />
+</RelativeLayout>
